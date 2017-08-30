@@ -33,6 +33,10 @@ body {
   height: auto;
 }
 
+a {
+	text-decoration: none;
+}
+
 @media only screen and (max-width: 760px) {
   .main-content {
     top: 2.5625rem;
@@ -156,6 +160,11 @@ header nav {
 
 #sign-up-cta h1 {
   font-size: 3.125rem;
+}
+
+#sign-up-cta a {
+	color: white;
+	font-weight: 600;
 }
 
 #sign-up-cta h2 {
@@ -319,6 +328,7 @@ header nav {
 
 #filters-section .images-container {
   max-width: 100%;
+  display: flex;
   padding: 0 1%;
 }
 
@@ -358,34 +368,34 @@ header nav {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
-  color: #4a4a4a;
+  color: #4A4A4A;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
