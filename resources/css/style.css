@@ -1,8 +1,11 @@
 /* Universal Styles */
 
 html {
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
+}
+
+body {
+	font-family: Roboto, sans-serif;
 }
 
 .main-content {
@@ -30,12 +33,6 @@ html {
   height: auto;
 }
 
-@media only screen and (max-width: 760px) {
-  .main-content {
-    top: 2.5625rem;
-  }
-}
-
 /* Header */
 
 header {
@@ -43,6 +40,7 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  height: 85px;
 }
 
 header .content {
@@ -53,6 +51,8 @@ header .content {
 
 header .logo {
   flex: 1;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 header nav ul {
@@ -77,6 +77,12 @@ header .icon {
 
 header .mobile {
   display: none;
+}
+
+header nav {
+	color: #4A4A4A;
+	font-size: 1rem;
+	line-height: 1.6;
 }
 
 @media only screen and (max-width: 760px) {
@@ -109,6 +115,9 @@ header .mobile {
     background-color: #9dc20b;
     line-height: 1.6;
     color: white;
+  }
+  .main-content {
+    top: 2.5625rem;
   }
 }
 
