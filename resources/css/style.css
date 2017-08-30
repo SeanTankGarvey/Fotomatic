@@ -5,14 +5,12 @@ html {
 }
 
 body {
-	font-family: Roboto, sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
-  background-image: url("../images/banner-landingpage.jpg");
-  overflow: hidden;
 }
 
 .center {
@@ -35,6 +33,12 @@ body {
   height: auto;
 }
 
+@media only screen and (max-width: 760px) {
+  .main-content {
+    top: 2.5625rem;
+  }
+}
+
 /* Header */
 
 header {
@@ -42,7 +46,6 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
-  height: 85px;
   z-index: 1
 }
 
@@ -119,9 +122,6 @@ header nav {
     line-height: 1.6;
     color: white;
   }
-  .main-content {
-    top: 2.5625rem;
-  }
 }
 
 /* Sign Up Section */
@@ -131,12 +131,17 @@ header nav {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url("../images/banner-landingpage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
 #sign-up-cta {
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
+  margin: 10.625rem 6.25rem;
   background-color: #9dc20b;
 }
 
@@ -162,7 +167,7 @@ header nav {
 }
 
 #sign-up-cta .cursive {
-  font-family: "Damion", cursive;
+  font-family: "Damion", cursive, serif;
 }
 
 #sign-up-cta .striking {
